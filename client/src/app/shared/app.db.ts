@@ -4,7 +4,7 @@ import { City } from '../model/city';
 export class AppDB extends Dexie {
 
     cities!: Table<City, string>;
-
+    
     constructor(){
         super('fileupload');
 

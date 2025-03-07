@@ -10,13 +10,15 @@ import { MaterialModule } from './material.module';
 import { UploadComponent } from './components/upload.component';
 import { ViewImageComponent } from './components/view-image.component';
 import { BackbuttonComponent } from './components/backbutton.component';
+import { GalleryComponent } from './components/gallery.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UploadComponent,
     ViewImageComponent,
-    BackbuttonComponent
+    BackbuttonComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,
