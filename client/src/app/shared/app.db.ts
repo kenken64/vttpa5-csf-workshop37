@@ -6,7 +6,7 @@ export class AppDB extends Dexie {
     cities!: Table<City, string>;
     
     constructor(){
-        super('fileupload');
+        super('fileuploadApp');
 
         this.version(1).stores({
             cities: 'code, city_name'

@@ -6,7 +6,7 @@ import { db } from '../shared/app.db';
 import { liveQuery } from "dexie";
 
 export interface CityState {
-    cities: City[];
+    citiesSlice: City[];
     loading: boolean;
 }
 
@@ -15,11 +15,11 @@ export interface CityState {
 })
 export class CityStore extends ComponentStore<CityState> {
     constructor() {
-        super({ cities: [], loading: false });
+        super({ citiesSlice: [], loading: false });
     }
 
     // Selector
-    readonly cities$ = this.select(state => state.cities);
+    readonly cities$ = this.select(state => state.citiesSlice);
     readonly loading$ = this.select(state => state.loading); //optional
 
     // Updaters
